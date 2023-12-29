@@ -7,6 +7,11 @@ const pool = require('./db')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
+app.listen(port, () => {
+  console.log('Hello world listening on port', port);
+});
+
+
 app.use(cors())
 app.use(express.json())
 
